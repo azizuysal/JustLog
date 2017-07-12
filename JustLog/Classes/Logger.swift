@@ -145,7 +145,7 @@ extension Logger: Logging {
 
 extension Logger {
     
-    fileprivate func logMessage(_ message: String, error: NSError?, userInfo: [String : Any]?, _ file: String, _ function: String, _ line: UInt) -> String {
+    func logMessage(_ message: String, error: NSError?, userInfo: [String : Any]?, _ file: String, _ function: String, _ line: UInt) -> String {
     
         let messageConst = "message"
         let userInfoConst = "userInfo"
